@@ -1,0 +1,75 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#hero,
+#hero img {
+    height: 30rem;
+    text-align: center;
+}
+
+#hero img {
+    width: 100%;
+
+}
+
+.card {
+    width: 30rem;
+    min-width: 20rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.cards {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.notification {
+
+    font-size: 3rem;
+    font-weight: 300;
+
+
+}
+
+.about {
+    padding: 2rem;
+}
+
+.about-content {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.level {
+    background-color: aqua;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #hero {
+        height: 15rem;
+        text-align: center;
+    }
+
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .about {
+        padding: .8rem;
+    }
+
+    .about-content {
+        text-decoration: none;
+        font-size: 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}

@@ -1,0 +1,11 @@
+.navbar{
+    padding: 0;
+    margin: 0;
+}
+
+#nav-bar-title {
+    font-weight: bold;
+    font-size: 2em;
+    font-family: cursive;
+    text-decoration: none;
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome</title>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+        rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/eeed48d253.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon end  -->
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- end  -->
+    <!-- javascript file -->
+
+    <style>
+        #nav-bar-title {
+            font-weight: bold;
+            font-size: 2em;
+            font-family: cursive;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 900px) {
+            .logo {
+                height: 30px;
+                width: 50px;
+            }
+        }
+
+        /* for compose pop window  */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+
+        /* fix contact page  */
+        #mySidenav a {
+            position: absolute;
+            left: -80px;
+            transition: 0.3s;
+            padding: 15px;
+            width: 100px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            border-radius: 0 5px 5px 0;
+        }
+
+        #mySidenav a:hover {
+            left: 0;
+        }
+
+
+        #contact {
+            top: 200px;
+            background-color: #555
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navigation bar  -->
+    <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color:#c187eb23;">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/secret">
+                <!-- <h1 id="nav-bar-title">Mail-Box</h1> -->
+                <img src="logo.svg" alt="A mailing for everyone">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a class="navbar-item" style="text-decoration: none;" href="/secret">
+                        <strong>Home</strong>
+                    </a>
+                    <!-- <a class="navbar-item" style="text-decoration: none;" href="/prechat">
+                        <strong>Chat</strong>
+                    </a> -->
+                    <a class="button is-info is-outlined is-rounded" id="compose"
+                        style="text-decoration:none;margin-right:2.5vh;">
+                        <!-- <i class="fa fa-plus" aria-hidden="true"></i> -->
+                        <span class="icon is-small">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                        <strong>Compose</strong>
+                    </a>
+                    <!-- <a class="is-link" style="text-decoration:none;margin-right:2.5vh;">
+                        <span class="icon is-small">
+                            <i class="fas fa-inbox"></i>
+                        </span>
+                        <strong>Inbox</strong>
+                    </a> -->
+                    <a class="button is-warning is-outlined is-rounded"
+                        style="text-decoration:none;margin-right:2.5vh;color:red;" href="/prechat">
+                        <span class="icon is-small">
+                            <i class="fas fa-share"></i>
+                        </span>
+                        <strong>Join Chat</strong>
+                    </a>
+                    <div class="buttons">
+                        <!-- <a class="button is-primary" style="text-decoration: none;" href="/login">
+                            <strong>Sign out</strong>
+                        </a> -->
+                        <button class="button is-primary" type="submit" id="out"><i
+                                class="fas fa-sign-out-alt"></i><strong>Sign out</strong></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- home page  -->
+    <h1 class="title is-1" style="text-align:center;font-family:'Pacifico',cursive;text-decoration:underline;">Safest
+        way to message.</h1>
+
+    <!-- pop up window for message -->
+    <!-- pop up window for compose the message  -->
+    <div id="myModel" class="model">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span><strong>New Message</strong></span>
+            <span class="close">&times;</span>
+            <br><br>
+            <form action="/send" method="POST">
+                <!-- to -->
+                <input class="input is-rounded" type="text" placeholder="To" name="To">
+                <!-- Code  -->
+                <input class="input is-rounded" type="text" id="roomcode" value="" name="Code" readonly>
+                <!-- subject  -->
+                <input class="input is-rounded" type="text" placeholder="Let's khat" name="Subject" disabled>
+                <!-- mailbox  -->
+                <textarea class="textarea" placeholder="Enter your message" rows="10" name="Message"></textarea>
+                <br><br>
+                <!-- send button  -->
+                <button class="button is-primary" id="sent" style="text-decoration:none;float:right;"
+                    type="submit">Sent</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- javascript file  -->
+    <script>
+
+
+        // //Prevent from reload
+
+        // var form = document.getElementById("myForm");
+        // function handleForm(event) { event.preventDefault(); } 
+        // form.addEventListener('submit', handleForm);
+
+        // Random Code generator
+
+        window.onload = function makeid() {
+            var code = '';
+            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ~!@#abcdefghijklmnopqrstuvwxyz$%^&*0123456789()-=_+[]{};:/?,.><';
+            var charactersLength = 88;
+            for (var i = 0; i < 8; i++) {
+                code += characters.charAt(Math.floor(Math.random() * charactersLength));
+            }
+            // alert(code);
+            document.getElementById("roomcode").value = code;
+            sessionStorage.setItem("code", code);
+
+
+        }
+        
+
+        
+
+
+        // for making the burger work when the size of screen decrease 
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });
+
+        // to sign out 
+        const out = document.getElementById("out");
+        out.addEventListener('click', e => {
+            window.location = ('index.html');
+        });
+
+        // pop up window for compose 
+
+        // pop up window for message 
+        var modal = document.getElementById("myModel");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("compose");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
