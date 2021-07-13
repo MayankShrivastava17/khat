@@ -31,6 +31,7 @@ It is designed such that a person can easily send a mail from in side the websit
 
  <li> The chatting feature is live and doesn’t record any of the communication. It is achieved by the help of the api Socket.io.
 
+   
  <li> The website is fully functional as of now and is deployed on Heroku.
   
 ## How to run on local machine
