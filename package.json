@@ -10,7 +10,7 @@
   "author": "Mayank Shrivastava & Anshul Prasad",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.19.1",
     "bulma-carousel": "^4.0.24",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
