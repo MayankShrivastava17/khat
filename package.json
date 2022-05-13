@@ -15,7 +15,7 @@
     "express": "^4.17.3",
     "express-session": "^1.17.2",
     "googleapis": "^80.2.0",
-    "moment": "^2.29.2",
+    "moment": "^2.29.3",
     "mongoose": "^5.13.14",
     "nodemailer": "^6.6.2",
     "passport": "^0.5.2",
