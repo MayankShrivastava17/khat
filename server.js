@@ -20,8 +20,6 @@ const {
 const bodyParser = require('body-parser');
 app.use(bodyParser());
 
-
-
 // Set static folder
 app.use(express.static(path.join(__dirname, 'views')));
 
