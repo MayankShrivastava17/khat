@@ -1,4 +1,4 @@
-Se# Khat : A safe mailing and messaging website
+# Khat : A safe mailing and messaging website
 <p>The website Khat is designed for the purpose of having a secure message channel between 2 individuals.
 It is designed such that a person can easily send a mail from in side the website to the other individual with a secure code that gives them access to a secure chat room where none of their conversations are stored. And for sending the mail with secure code also the user doesn’t have to go out as the feature of sending mail is integrated with the website.</p>
 <br>
