@@ -47,5 +47,3 @@ Step 4. Open `http://127.0.0.1:3000/`
 ---   
    
 Designed and developed by <strong>[Anshul](https://www.linkedin.com/in/anshul-prasad-9260281a2/)</strong> & <strong>[Mayank](https://www.linkedin.com/in/mayankshrivastava17/)</strong>
-   
-   
