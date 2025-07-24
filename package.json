@@ -13,7 +13,7 @@
     "body-parser": "^1.20.1",
     "bulma-carousel": "^4.0.24",
     "express": "^4.17.3",
-    "express-session": "^1.17.3",
+    "express-session": "^1.18.2",
     "googleapis": "^80.2.0",
     "moment": "^2.29.4",
     "mongoose": "^6.5.3",
